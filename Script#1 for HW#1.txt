@@ -1,0 +1,36 @@
+#!/bin/bash
+#Austin Griffith and Caroline Friedman
+
+#while loop to iterate through all the scorces to get avg
+
+{
+
+while read -r studID firstname lastname g1 g2 g3
+
+do
+
+        let "total="$g1"+"$g2"+"$g3""
+        let "average="$total"/3"
+        echo ""$average" ["$studID"] "$lastname", "$firstname""
+
+#use echo to print the average scores first, then ID with [ ] then last then first names
+
+done <  Grades.txt | sort -k 3,3d -k4,4d
+}
+
+
+~                                                                                          
+~                                                                                          
+~                                                                                          
+~                                                                                          
+~                                                                                          
+~                                                                                          
+~                                                                                          
+~                                                                                          
+~                                                                                          
+~                                                                                          
+~                                                                                          
+~                                                                                          
+~                                                                                          
+~                                                                                          
+"Grades.sh" 21L, 436C
